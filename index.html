@@ -5,26 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TP1b M4</title>
 <style>
-body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:24px;background:#f4f6f9;color:#1f2933}
-h1{margin-top:0}
-table{border-collapse:collapse;width:100%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.15)}
-th{background:#0b5cad;color:#fff;text-align:left;padding:10px 12px}
-td{padding:10px 12px;border-bottom:1px solid #e1e5ea;vertical-align:top;font-size:14px}
-tr:nth-child(even) td{background:#f8fafc}
+body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;padding:24px;background:#f4f6fa;color:#1f2937}
+h1{margin:0 0 16px;color:#0b3d91}
+.wrap{overflow-x:auto;background:#fff;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.12)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th{background:#0b5ed7;color:#fff;text-align:left;padding:12px;position:sticky;top:0}
+td{padding:10px 12px;border-bottom:1px solid #e5e7eb;vertical-align:top}
+tr:hover td{background:#f0f6ff}
 td.key{white-space:nowrap;font-weight:600}
-a{color:#0b5cad;text-decoration:none}
+a{color:#0b5ed7;text-decoration:none}
+.empty{color:#9ca3af}
 .badge{display:inline-block;padding:3px 10px;border-radius:12px;font-size:12px;font-weight:600;white-space:nowrap}
-.closed{background:#d4f4dd;color:#1a6b34}
-.cancelled{background:#e3e6ea;color:#4a5560}
-.hold{background:#ffe9c7;color:#8a5200}
+.closed{background:#d1fae5;color:#065f46}
+.cancelled{background:#e5e7eb;color:#374151}
+.hold{background:#fef3c7;color:#92400e}
 </style>
 </head>
 <body>
 <h1>TP1b M4</h1>
+<div class="wrap">
 <table>
 <thead><tr><th>Key</th><th>Summary</th><th>Release Note Title</th><th>Release Note Description</th><th>Status</th></tr></thead>
 <tbody>
-<tr><td class="key"><a href="https://7education.atlassian.net/browse/BUGHUNTERS-1337">BUGHUNTERS-1337</a></td><td>ie-assessment: wizard step - text replacements</td><td></td><td></td><td><span class="badge closed">Closed</span></td></tr>
+<tr><td class="key"><a href="https://7education.atlassian.net/browse/BUGHUNTERS-1337">BUGHUNTERS-1337</a></td><td>ie-assessment: wizard step - text replacements</td><td><span class="empty">–</span></td><td><span class="empty">–</span></td><td><span class="badge closed">Closed</span></td></tr>
 <tr><td class="key"><a href="https://7education.atlassian.net/browse/BUGHUNTERS-1262">BUGHUNTERS-1262</a></td><td>ie-support: aspect filter shows strange placeholder</td><td>Überfachliche Beurteilungen: Korrektur Teilkompetenz-Filter</td><td>Im Filter &quot;Teilkompetenz&quot; auf der Seite Fördern wurde ein Fehler behoben, bei dem nach Auswahl einer Kompetenz fälschlicherweise &quot;[object Object]&quot; statt der korrekten Teilkompetenz-Texte angezeigt wurde.</td><td><span class="badge closed">Closed</span></td></tr>
 <tr><td class="key"><a href="https://7education.atlassian.net/browse/BUGHUNTERS-1247">BUGHUNTERS-1247</a></td><td>ie-configuration_admin: add &quot;Mittelwert&quot; to &quot;Sozialer Vergleich&quot; description text</td><td>Überfachliche Beurteilungen: Angepasster Hinweistext</td><td>Der Hinweistext bei &quot;Sozialer Vergleich&quot; erwähnt neu auch die Spalte &quot;Mittelwert&quot;.</td><td><span class="badge closed">Closed</span></td></tr>
 <tr><td class="key"><a href="https://7education.atlassian.net/browse/BUGHUNTERS-1246">BUGHUNTERS-1246</a></td><td>ie-configuration_admin: disable social comparison setting for all tenants</td><td>Überfachliche Beurteilungen: Angepasste Standardeinstellung</td><td>Die Einstellung &quot;Sozialer Vergleich&quot; wurde für alle Schulen deaktiviert.</td><td><span class="badge closed">Closed</span></td></tr>
@@ -49,13 +52,14 @@ a{color:#0b5cad;text-decoration:none}
 <tr><td class="key"><a href="https://7education.atlassian.net/browse/BUGHUNTERS-1168">BUGHUNTERS-1168</a></td><td>ie-support: rename things to make the PHSG happy</td><td>Überfachliche Beurteilungen: Klarere Bezeichnungen auf der Fördern-Seite</td><td>Auf der Fördern-Seite der Überfachlichen Beurteilungen heisst die Spalte neu “Förderbaustein/Lerninsel”. Zudem wurden die Mouseover-Texte der Download-Buttons präzisiert, damit klar ist, was jeweils herunterladen wird.</td><td><span class="badge closed">Closed</span></td></tr>
 <tr><td class="key"><a href="https://7education.atlassian.net/browse/BUGHUNTERS-1143">BUGHUNTERS-1143</a></td><td>ie-analyse: strength and weakness toggles filter rows to matching values only</td><td>Überfachliche Beurteilungen: Stärken- und Schwächen-Toggle filtert die Tabelle</td><td>Die Toggles “Stärken zeigen” und “Schwächen zeigen” filtern die Tabelle in der Analysieren-Ansicht neu so, dass nur noch Zeilen mit einer tatsächlichen Stärke bzw. Schwäche angezeigt werden. Bisher blieben alle Zeilen sichtbar und nur die passenden Werte wurden hervorgehoben.</td><td><span class="badge closed">Closed</span></td></tr>
 <tr><td class="key"><a href="https://7education.atlassian.net/browse/BUGHUNTERS-1096">BUGHUNTERS-1096</a></td><td>ie-analyse: info bar with session-based dismissal</td><td>Überfachliche Beurteilungen: Infobar mit sitzungsbasierter Ausblendung</td><td>In der Analysieren-Ansicht der Überfachlichen Beurteilungen wird neu eine Infobar angezeigt, die der Benutzer schliessen kann. Wird sie geschlossen, bleibt sie für den Rest der aktuellen Sitzung ausgeblendet und erscheint erst nach einem erneuten Login wieder.</td><td><span class="badge closed">Closed</span></td></tr>
-<tr><td class="key"><a href="https://7education.atlassian.net/browse/BUGHUNTERS-951">BUGHUNTERS-951</a></td><td>ie-assessment: empty student form</td><td></td><td></td><td><span class="badge closed">Closed</span></td></tr>
+<tr><td class="key"><a href="https://7education.atlassian.net/browse/BUGHUNTERS-951">BUGHUNTERS-951</a></td><td>ie-assessment: empty student form</td><td><span class="empty">–</span></td><td><span class="empty">–</span></td><td><span class="badge closed">Closed</span></td></tr>
 <tr><td class="key"><a href="https://7education.atlassian.net/browse/BUGHUNTERS-916">BUGHUNTERS-916</a></td><td>ie-analyse: show trend</td><td>Überfachliche Beurteilungen: Tendenzanzeige</td><td>In der Ansicht Analysieren kann neu über den Schalter &quot;Tendenz anzeigen&quot; eine Spalte &quot;Tendenz&quot; eingeblendet werden. Sie zeigt anhand von Pfeilen, ob sich eine Schülerin oder ein Schüler zwischen der ersten und letzten Einschätzung verbessert, verschlechtert oder gleich geblieben ist.</td><td><span class="badge closed">Closed</span></td></tr>
-<tr><td class="key"><a href="https://7education.atlassian.net/browse/BUGHUNTERS-1425">BUGHUNTERS-1425</a></td><td>ie-assessment: follow up to 1145 (split ALSF mapping completion)</td><td></td><td></td><td><span class="badge hold">On Hold</span></td></tr>
+<tr><td class="key"><a href="https://7education.atlassian.net/browse/BUGHUNTERS-1425">BUGHUNTERS-1425</a></td><td>ie-assessment: follow up to 1145 (split ALSF mapping completion)</td><td><span class="empty">–</span></td><td><span class="empty">–</span></td><td><span class="badge hold">On Hold</span></td></tr>
 <tr><td class="key"><a href="https://7education.atlassian.net/browse/BUGHUNTERS-1248">BUGHUNTERS-1248</a></td><td>ie-support: rename mouseover</td><td>Überfachliche Beurteilungen: Klarerer Tooltip</td><td>Der Mouseover-Text beim Download-Symbol in der Tabelle &quot;Fördern&quot; heisst neu &quot;Sammlung herunterladen&quot;.</td><td><span class="badge cancelled">Cancelled</span></td></tr>
 <tr><td class="key"><a href="https://7education.atlassian.net/browse/BUGHUNTERS-1237">BUGHUNTERS-1237</a></td><td>ie-assessment: transformation wizard - Step 3 - update warning sentence</td><td>Überfachliche Beurteilungen: Klarere ALSV-Fehlermeldung</td><td>Kann die optionale Ergänzung fürs ALSV nicht vollständig gemacht werden, erscheint neu eine klare Meldung, dass nicht alle Teilkompetenzen und/oder Schüler:innen eingeschätzt wurden.</td><td><span class="badge cancelled">Cancelled</span></td></tr>
 <tr><td class="key"><a href="https://7education.atlassian.net/browse/BUGHUNTERS-1236">BUGHUNTERS-1236</a></td><td>ie-assessment: transformation wizard - Step 3 - remove the percentages</td><td>Überfachliche Beurteilungen: Prozentangaben entfernt</td><td>Im Dialog &quot;Optionale Ergänzung fürs ALSV - Schritt 3&quot; werden die Prozentangaben vor den ÜfK-Teilkompetenzen nicht mehr angezeigt.</td><td><span class="badge cancelled">Cancelled</span></td></tr>
 </tbody>
 </table>
+</div>
 </body>
 </html>
